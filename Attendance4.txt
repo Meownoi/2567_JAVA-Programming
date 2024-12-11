@@ -1,0 +1,4 @@
+Student ID : 2413110871
+Student Name : Prasertkarn Sukitanont
+Topic : String Method
+DAte : 12/11/2024
