@@ -11,7 +11,7 @@ public class Lab508 {
 			
 				System.out.print("Current data, nums["+index+"]="+currentData(nums,index) + "\n");
 				System.out.print("previous data,nums["+(index-1)+"] ="+(prevData(nums, index)!=-1 ? prevData(nums,index):"No previous data")+"\n");
-				System.out.print("Next data,nums["+(index-1)+"] ="+(nextData(nums, index)!=-1 ? nextData(nums,index):"No next data")+"\n");
+				System.out.print("next data,nums["+(index+1)+"] ="+(nextData(nums, index)!=-1 ? nextData(nums,index):"No next data")+"\n");
 
 		
 
