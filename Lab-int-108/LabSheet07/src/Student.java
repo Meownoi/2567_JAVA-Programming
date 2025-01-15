@@ -13,9 +13,12 @@ public class Student {
 	//Method to calculate average score
 	public double calculateAverageScore() {
 		double total = 0;
-		for(int i=0;i<scores.length;i++) {
-			total += scores[i];
-		}
+		/*	for(double i=0;i<scores.length;i++) {
+		total += scores[i];			
+	}*/
+	for(double _score : scores) {
+		total += _score;			
+	}
 		return total/scores.length;  //return average of scores[]
 	}
 	
