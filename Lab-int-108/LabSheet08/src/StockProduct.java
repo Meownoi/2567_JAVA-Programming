@@ -13,41 +13,28 @@ public class StockProduct {
 	            int unit;
 	            do {
 	                System.out.print("Input product unit: ");
-	                unit = scanner.nextInt();
-	                if (unit > 0) {
-	                    productList[i].setUnit(unit);
-	                } else {
-	                    System.out.println("Unit must be greater than 0.");
-	                }
-	            } while (unit <= 0);
 
 	            double price;
 	            do {
 	                System.out.print("Input product price: ");
 	                price = scanner.nextDouble();
-	                if (price > 0) {
-	                    productList[i].setPrice(price);
-	                } else {
-	                    System.out.println("Price must be greater than 0.");
-	                }
-	            } while (price <= 0);
 
 	            scanner.nextLine(); // Consume newline
-	        }
+	        
 
-	        double totalStockValue = 0;
+	        double totalStockPrice = 0;
 	        Line();
 
 	        for (product product : productList) {
 	            double productValue = product.calculate();
-	            totalStockValue += productValue;
+	            totalStockPrice += productValue;
 
-	            System.out.printf("Product ID: %s | Unit: %d | Price per unit: %.2f | Total value: %.2f\n",
+	            System.out.printf("Product ID: %s  ,Unit: %d  ,Price per unit: %.2f , Total price: %.2f\n",
 	                    product.getId(), product.getUnit(), product.getPrice(), productValue);
 	        }
 
 	        Line();
-	        System.out.printf("Total price of all products: %.2f baht\n", totalStockValue);
+	        System.out.printf("Total price of all products: %.2f baht\n", totalStockPrice);
 
 	        scanner.close();
 	    }
