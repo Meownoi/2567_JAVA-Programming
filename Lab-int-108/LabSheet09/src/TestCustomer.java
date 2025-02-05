@@ -41,7 +41,7 @@ public class TestCustomer {
  // show customer's discount by instance inv1
  System.out.println("customer's discount is: " + inv1.getCustomerDiscount());
  // show invoice's amount after discount(format as output)
- System.out.println("amount after discount is: " + inv1.getAmountAfterDiscount());
+ System.out.printf("amount after discount is: %.2f" , inv1.getAmountAfterDiscount());
  } //end of main method()
  public static void Line() {
 	 	for(int i = 0 ; i<=100;i++) {
